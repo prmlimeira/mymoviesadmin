@@ -1,0 +1,62 @@
+<!--
+
+   Pagina principal onde teremos listados os videos
+   com as respectivas opções.
+
+-->
+
+<html>
+
+<title> \o/ MyMoviesAdmin \o/ </title>
+<head> <center> <h1>MyMoviesAdmin</h1> </center></head><hr>
+
+<script type="text/javascript">
+
+  var stringRecebida = "Caminho1|a gota serena|600MB&Caminho2|sibaliqueija|500MB"; //Variavel de retorno da chamada Assincrona
+
+  function mudaFrame(){
+	
+	var conteudo = document.getElementById("CONTEUDO");
+	conteudo.innerHTML = '';
+	var links = stringRecebida.split("&");//Caminho_do_link|Nome_do_filme|Tamanho&
+	
+	for(var i = 0; i < links.length ;i++){
+		var path_name_size = links[i].split("|");
+		conteudo.innerHTML = conteudo.innerHTML+"<p>"+path_name_size[1]+" "+"<a href="+path_name_size[0]+">Download</a> Tamanho: "+path_name_size[2]+"</p>";
+	}
+	
+  }
+
+  function mudaLetra(){
+   
+     //Esta funcao irá alterar a variavel stringRecebida
+     //E rodar mudaFrame
+
+  }
+
+
+</script>
+
+	<body>
+
+	    <center>	
+		<a href="" onmouseover="mudaLetra('A')">A</a> <a href="" onmouseover="mudaLetra('B')">B</a> <a href="" onmouseover="mudaLetra('C')">C</a> 
+		<a href="" onmouseover="mudaLetra('D')">D</a> <a href="" onmouseover="mudaLetra('E')">E</a> <a href="" onmouseover="mudaLetra('F')">F</a> 	
+		<a href="" onmouseover="mudaLetra('G')">G</a> <a href="" onmouseover="mudaLetra('H')">H</a> <a href="" onmouseover="mudaLetra('I')">I</a> 	
+		<a href="" onmouseover="mudaLetra('J')">J</a> <a href="" onmouseover="mudaLetra('K')">K</a> <a href="" onmouseover="mudaLetra('L')">L</a> 	
+		<a href="" onmouseover="mudaLetra('M')">M</a> <a href="" onmouseover="mudaLetra('N')">N</a> <a href="" onmouseover="mudaLetra('O')">O</a> 	
+		<a href="" onmouseover="mudaLetra('P')">P</a> <a href="" onmouseover="mudaLetra('Q')">Q</a> <a href="" onmouseover="mudaLetra('R')">R</a> 
+   		<a href="" onmouseover="mudaLetra('S')">S</a> <a href="" onmouseover="mudaLetra('T')">T</a> <a href="" onmouseover="mudaLetra('U')">U</a> 
+		<a href="" onmouseover="mudaLetra('W')">W</a> <a href="" onmouseover="mudaLetra('V')">V</a> <a href="" onmouseover="mudaLetra('X')">X</a> 
+		<a href="" onmouseover="mudaLetra('Y')">Y</a> <a href="" onmouseover="mudaLetra('Z')">Z</a> 
+	    </center>
+		
+
+		<div id="CONTEUDO">
+
+					
+
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,8 @@
+++++++++++++++++++++
+TODO		   +
+++++++++++++++++++++
+
+1. Criar layout página principal;
+2. Criar o gerador da lista de filmes;
+3. Aprender como rodar filmes no browser;
+4. Deixar a apresentação mais bonita. :D
