@@ -6,3 +6,4 @@ TODO		   +
 2. Criar o gerador da lista de filmes;
 3. Aprender como rodar filmes no browser;
 4. Deixar a apresentação mais bonita. :D
+5. Fazer a parte que usa crawlers do script de gerenciamento;
